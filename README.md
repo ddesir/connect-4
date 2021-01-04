@@ -5,6 +5,25 @@ You wake up in a room with only a knife, a banana, and some dish soap. A hooded 
 
 **[Banana]**
 
-**[Dish Soap]**
+**[Dish soap]**
+
+---
+
+## [Knife]
+
+
+---
+
+## [Banana]
+
+
+---
+
+## [Dish soap]
+"Good choice," says the hooded figure. "The name's Johnny. Follow me."
+
+**[Follow]**
+
+**[Go back to bed]**
 
 ---
