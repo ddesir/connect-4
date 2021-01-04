@@ -17,7 +17,7 @@ You wake up in a room with only a knife, a banana, and some dish soap. A hooded 
 ## [Banana]
 You pick up the delicious yellow fruit, peel, and eat it within seconds.
 
-Hooded Man: "What have you done?! That was the last banana on planet Earth!"
+Hooded Man: "What have you done?! That was the last banana on Earth!"
 
 **[Apologize]**
 
@@ -25,11 +25,31 @@ Hooded Man: "What have you done?! That was the last banana on planet Earth!"
 
 ---
 
+## [Apologize]
+
+
+---
+
+## [Fight the hooded man]
+
+
+---
+
 ## [Dish soap]
 Hooded Man: "Good choice. The name's Johnny. Follow me."
 
-**[Follow]**
+**[Follow Johnny]**
 
-**[Go back to bed]**
+**[Go back to sleep]**
+
+---
+
+## [Follow Johnny]
+
+
+---
+
+## [Go back to sleep]
+
 
 ---
