@@ -43,13 +43,17 @@ Hooded Man: "Come back in ten years."
 Hooded Man: "Good choice. The name's Johnny. Follow me."
 
 **[Follow Johnny]**
-
 **[Go back to sleep]**
 
 ---
 
 ## [Follow Johnny]
+The Hooded Man rushes at you with astonishing momentum. 
+He pulls out yet another bottle of dish soap and bashes you across the head with it. 
+*THUNK* The Hooded man challenges you to a dishwashing battle! you:
 
+**[Accept the dishwashing challenge]**
+**[Decline and blast all of the soap in your bottle at him]**
 
 ---
 
