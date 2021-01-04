@@ -31,7 +31,11 @@ Hooded Man: "What have you done?! That was the last banana on Earth!"
 ---
 
 ## [Fight the hooded man]
+Sensing hostility from your eyes, the hooded man subdues you before you can attack.
 
+Hooded Man: "Come back in ten years."
+
+**[The end]**
 
 ---
 
@@ -50,6 +54,8 @@ Hooded Man: "Good choice. The name's Johnny. Follow me."
 ---
 
 ## [Go back to sleep]
+You turn your body away from Johnny and go back to sleep.
 
+**[The end]**
 
 ---
