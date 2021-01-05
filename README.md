@@ -2,9 +2,7 @@
 You wake up in a room with only a knife, a banana, and some dish soap. A hooded man comes into the room and demands that you choose an item. You choose:
 
 - [Knife]
-
 - [Banana]
-
 - [Dish soap]
 
 ---
@@ -20,7 +18,6 @@ You pick up the delicious yellow fruit, peel, and eat it within seconds.
 Hooded Man: "What have you done?! That was the last banana on Earth!"
 
 - [Apologize]
-
 - [Fight the hooded man]
 
 ---
@@ -54,6 +51,16 @@ He pulls out yet another bottle of dish soap and bashes you across the head with
 
 - [Accept the dishwashing challenge]
 - [Decline and blast all of the soap in your bottle at him]
+
+---
+
+## [Accept the dishwashing challenge]
+
+
+---
+
+## [Decline and blast all of the soap in your bottle at him]
+
 
 ---
 
