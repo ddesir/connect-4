@@ -1,5 +1,5 @@
 ## [Start]
-You wake up in a room with only a knife, a banana, and some dish soap. A hooded man comes into the room and demands that you choose an item. You choose:
+You wake up in a room with only a knife, a banana, and some dish soap. A Hooded Man comes into the room and demands that you choose an item. You choose:
 
 - [Knife]
 - [Banana]
@@ -18,7 +18,7 @@ You pick up the delicious yellow fruit, peel, and eat it within seconds.
 Hooded Man: "What have you done?! That was the last banana on Earth!"
 
 - [Apologize]
-- [Fight the hooded man]
+- [Fight the Hooded Man]
 
 ---
 
@@ -27,8 +27,8 @@ Hooded Man: "What have you done?! That was the last banana on Earth!"
 
 ---
 
-## [Fight the hooded man]
-Sensing hostility from your eyes, the hooded man subdues you before you can attack.
+## [Fight the Hooded Man]
+Sensing hostility from your eyes, the Hooded Man subdues you before you can attack.
 
 Hooded Man: "Come back in ten years."
 
