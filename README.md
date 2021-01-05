@@ -32,7 +32,7 @@ Sensing hostility from your eyes, the Hooded Man subdues you before you can atta
 
 Hooded Man: "Come back in ten years."
 
-- [The end]
+- [The end](https://github.com/Henotis/Winter-Boot#the-end)
 
 ---
 
@@ -67,6 +67,9 @@ He pulls out yet another bottle of dish soap and bashes you across the head with
 ## [Go back to sleep]
 You turn your body away from Johnny and go back to sleep.
 
-- [The end]
+- [The end](https://github.com/Henotis/Winter-Boot#the-end)
 
 ---
+
+## [The end]
+Thank you for playing The Legend of a Hooded Man!
