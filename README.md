@@ -73,3 +73,5 @@ You turn your body away from Johnny and go back to sleep.
 
 ## [The end]
 Thank you for playing The Legend of a Hooded Man!
+
+---
