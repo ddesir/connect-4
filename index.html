@@ -41,9 +41,15 @@ Reduce Problem Space:
 </head>
 
 <body>
+  <!-- Title -->
+  <div class="container center-align">
+    <h3>
+      Connect Four
+    </h3>
+  </div>
+
+  <!-- Board -->
   <div class="container">
-    <h4>Connect-4, Group: 3</h4>
-    <!-- content goes here -->
     <table>
       <thead>
         <tr class="colo1">
@@ -113,11 +119,11 @@ Reduce Problem Space:
         </tr>
       </tbody>
     </table>
+  </div>
 
-    <div class="container">
-      <h2 id="winner"></h2>
-      <button onclick="reset_board()">RESET BOARD</button>
-    </div>
+  <!-- Reset Button -->
+  <div class="container center-align">
+    <a onclick="reset()" class="waves-effect waves-light btn">RESET BOARD</a>
   </div>
 
   <!-- include external js files -->
