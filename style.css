@@ -1,4 +1,4 @@
-.border{
+.border {
     border: 5px solid blue;
     max-width: 40px;
     max-height: 60px;
@@ -6,25 +6,31 @@
     height: 60px;
 }
 
-.colo1{
+.colo1 {
     /* this is only for the label column */
- background-color: lightgray;
+    background-color: lightgray;
 }
-.colo2{
+
+.colo2 {
     background-color: white;
 }
-.colo3{
+
+.colo3 {
     background-color: white;
 }
-.colo4{
+
+.colo4 {
     background-color: white;
 }
-.colo5{
+
+.colo5 {
     background-color: white;
 }
-.colo6{
+
+.colo6 {
     background-color: white;
 }
-.colo7{
+
+.colo7 {
     background-color: white;
 }
