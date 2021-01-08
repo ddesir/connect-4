@@ -17,6 +17,7 @@ To practice combining all the elements we've learned from previous classes (HTML
 - Static text for rules.
 
 # Function Stubs
+- draw_board()
 - isFull()
 - userTurn()
 - aiTurn()
