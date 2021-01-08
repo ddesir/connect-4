@@ -12,7 +12,6 @@ let wins = 0;
 let losses = 0;
 let ties = 0;
 
-
 function draw_board() {
     for (let i = 0; i < 6; i++) {
         for (let j = 0; j < 7; j++) {
@@ -31,8 +30,6 @@ function draw_board() {
         }
     }
 }
-
-
 
 function isFull() {
 
