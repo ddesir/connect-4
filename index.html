@@ -1,17 +1,16 @@
 <!doctype html>
-<!-- Purpose:
-To practice combining all the elements we've learned from previous classes 
-(HTML, CSS, and JS) within the framing of building a web based Connect 4 game.
--->
 
-<!-- Features: 
+<!--
+Purpose:
+To practice combining all the elements we've learned from previous classes (HTML, CSS, and JS) within the framing of building a web based Connect 4 game.
+
+Features: 
 -User can choose which column to place pieces
 -User can reset
 -User can view wins/losses/ties
 -User can read rules
--->
 
-<!-- Implementation:
+Implementation:
 -Cannot place piece on already full column
 -Use push() to add to column while the array.length is < 6
 -Use Math.random() to determine ai move while array.length is < 6
@@ -19,31 +18,30 @@ To practice combining all the elements we've learned from previous classes
 -Reset will clear the board
 -Wins, losses, ties variables
 -Static text for rules
- -->
 
-<!-- Stubs():
-  userTurn()
-  aiTurn()
-  reset()
-  isFull()
- -->
+Function Stubs:
+- userTurn()
+- aiTurn()
+- reset()
+- isFull()
 
- <!-- Reduce Problem Space:
+Reduce Problem Space:
 -Assume user always goes first
 -User is "O"
--Use "O" and "X" as pieces 
+-Use "O" and "X" as pieces
 -->
 
-
 <html>
-  <head>
-    <!-- include external css files -->
-    <link rel="stylesheet" href="style.css"/>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  </head>
-  <body>
-    <div class="container">
+
+<head>
+  <!-- include external css files -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+</head>
+
+<body>
+  <div class="container">
     <h4>Connect-4, Group: 3</h4>
     <!-- content goes here -->
     <table>
@@ -116,8 +114,8 @@ To practice combining all the elements we've learned from previous classes
       </tbody>
     </table>
   </div>
-    <!-- include external js files -->
-    <script src="game.js"></script> 
-  </body>
-</html>
+  <!-- include external js files -->
+  <script src="game.js"></script>
+</body>
 
+</html>
