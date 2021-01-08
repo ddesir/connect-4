@@ -14,15 +14,13 @@
 </head>
 
 <body>
-  <!-- Title -->
-  <div class="container center-align">
-    <h3>
+  <div class="container">
+    <!-- Title -->
+    <h3 class="center-align">
       Connect Four
     </h3>
-  </div>
 
-  <!-- Board -->
-  <div class="container">
+    <!-- Board -->
     <table>
       <thead>
         <tr class="colo1">
@@ -93,12 +91,17 @@
       </tbody>
     </table>
 
+    <!-- Reset Button -->
+    <div class="container center-align">
+      <a onclick="reset()" class="waves-effect waves-light btn">RESET BOARD</a>
+    </div>
+
+    <!-- Rules/Wins/Losses/Ties -->
     <div class="row">
       <div class="col s12">
         <ul class="tabs">
           <li class="tab col s3"><a href="#test1">Rules: </a></li>
           <li class="tab col s3"><a class="active" href="#test2">Wins, Losses, and Ties: </a></li>
-
         </ul>
       </div>
       <div id="test1" class="col s12">Connect Four (also known as Four Up, Plot Four, Find Four, Four in a Row, Drop
@@ -114,11 +117,6 @@
       var el = document.querySelector('.tabs');
       var instance = M.Tabs.init(el, {});
     </script>
-  </div>
-
-  <!-- Reset Button -->
-  <div class="container center-align">
-    <a onclick="reset()" class="waves-effect waves-light btn">RESET BOARD</a>
   </div>
 
   <!-- include external js files -->
