@@ -1,17 +1,16 @@
 <!doctype html>
-<!-- Purpose:
-To practice combining all the elements we've learned from previous classes 
-(HTML, CSS, and JS) within the framing of building a web based Connect 4 game.
--->
 
-<!-- Features: 
+<!--
+Purpose:
+To practice combining all the elements we've learned from previous classes (HTML, CSS, and JS) within the framing of building a web based Connect 4 game.
+
+Features: 
 -User can choose which column to place pieces
 -User can reset
 -User can view wins/losses/ties
 -User can read rules
--->
 
-<!-- Implementation:
+Implementation:
 -Cannot place piece on already full column
 -Use push() to add to column while the array.length is < 6
 -Use Math.random() to determine ai move while array.length is < 6
@@ -19,33 +18,37 @@ To practice combining all the elements we've learned from previous classes
 -Reset will clear the board
 -Wins, losses, ties variables
 -Static text for rules
- -->
 
-<!-- Stubs():
-  userTurn()
-  aiTurn()
-  reset()
-  isFull()
- -->
+Function Stubs:
+- isFull()
+- userTurn()
+- aiTurn()
+- reset()
 
- <!-- Reduce Problem Space:
+Reduce Problem Space:
 -Assume user always goes first
 -User is "O"
--Use "O" and "X" as pieces 
+-Use "O" and "X" as pieces
 -->
 
-
 <html>
-  <head>
-    <!-- include external css files -->
-    <link rel="stylesheet" href="style.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  </head>
-  <body>
-    <div class="container">
-    <h4>Connect-4, Group: 3</h4>
-    <!-- content goes here -->
+<head>
+  <!-- include external css files -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+</head>
+
+<body>
+  <!-- Title -->
+  <div class="container center-align">
+    <h3>
+      Connect Four
+    </h3>
+  </div>
+
+  <!-- Board -->
+  <div class="container">
     <table>
       <thead>
         <tr class="colo1">
@@ -134,8 +137,23 @@ To practice combining all the elements we've learned from previous classes
     </script>
   </div>
 
-    <!-- include external js files -->
-    <script src="game.js"></script> 
-  </body>
-</html>
+  <!-- Reset Button -->
+  <div class="container center-align">
+    <a onclick="reset()" class="waves-effect waves-light btn">RESET BOARD</a>
+  </div>
 
+  <!-- Rules -->
+  <div class="container">
+    <h6>
+      Connect Four Rules
+    </h6>
+    <p>
+      Connect Four (also known as Four Up, Plot Four, Find Four, Four in a Row, Drop Four, and Gravitrips in the Soviet Union) is a two-player connection board game, in which the players choose a color and then take turns dropping colored discs into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the lowest available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs. Connect Four is a solved game. The first player can always win by playing the right moves.
+    </p>
+  </div>
+
+  <!-- include external js files -->
+  <script src="game.js"></script>
+</body>
+
+</html>
