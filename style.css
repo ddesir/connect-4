@@ -6,31 +6,6 @@
     height: 60px;
 }
 
-.colo1 {
-    /* this is only for the label column */
-    background-color: lightgray;
-}
-
-.colo2 {
-    background-color: white;
-}
-
-.colo3 {
-    background-color: white;
-}
-
-.colo4 {
-    background-color: white;
-}
-
-.colo5 {
-    background-color: white;
-}
-
-.colo6 {
-    background-color: white;
-}
-
-.colo7 {
-    background-color: white;
+thead {
+    background-color: lightblue;
 }
