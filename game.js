@@ -17,7 +17,7 @@ let wins = 0;
 let losses = 0;
 let ties = 0;
 
-// updates the DOM based on the board array
+// updates the DOM based on the board
 function draw_board() {
 	// for (let i = 0; i < 6; i++) {
 	// 	for (let j = 0; j < 7; j++) {
@@ -37,8 +37,8 @@ function draw_board() {
 	// }
 }
 
-// returns true if col is full, or returns false otherwise
-// NOTE: col is the column index (e.g., column two has a column index of 1)
+// returns true if col is full
+// NOTE: col is the column index (e.g., column two's index is 1)
 function isColFull(col) {
 	if (board[col].length >= ROWS) {
 		return true;
@@ -47,9 +47,9 @@ function isColFull(col) {
 	}
 }
 
-// returns false if board has a non-full column, or returns true otherwise
+// returns false if the board has at least one non-full column
 function isBoardFull() {
-	// scans board column by column
+	// scans the board column by column
 	for (let i = 0; i < COLUMNS; i++) {
 		if (!isColFull(i)) {
 			return false;
