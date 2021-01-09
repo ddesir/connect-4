@@ -1,5 +1,8 @@
 "use strict";
 
+const ROWS = 6;
+const COLUMNS = 7;
+
 let board = [
 	[" ", " ", " ", " ", " ", " "], // column one
 	[" ", " ", " ", " ", " ", " "], // column two
