@@ -37,7 +37,7 @@ function draw_board() {
 	// }
 }
 
-// returns true if col is full, or false otherwise
+// returns true if col is full, or returns false otherwise
 // NOTE: col is the column index (e.g., column two has a column index of 1)
 function isColFull(col) {
 	if (board[col].length >= ROWS) {
@@ -45,6 +45,17 @@ function isColFull(col) {
 	} else {
 		return false;
 	}
+}
+
+// returns false if board has a non-full column, or returns true otherwise
+function isBoardFull() {
+	// scans board column by column
+	for (let i = 0; i < COLUMNS; i++) {
+		if (!isColFull(i)) {
+			return false;
+		}
+	}
+	return true;
 }
 
 // processes user move
