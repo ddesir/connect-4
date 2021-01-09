@@ -56,4 +56,3 @@ function reset() {
 
 // run these functions for the first time to set up the game
 draw_board();
-update_record();
