@@ -1,13 +1,16 @@
 "use strict";
 
+const ROWS = 6;
+const COLUMNS = 7;
+
 let board = [
-	[" ", " ", " ", " ", " ", " "], // column one
-	[" ", " ", " ", " ", " ", " "], // column two
-	[" ", " ", " ", " ", " ", " "], // column three
-	[" ", " ", " ", " ", " ", " "], // column four
-	[" ", " ", " ", " ", " ", " "], // column five
-	[" ", " ", " ", " ", " ", " "], // column six
-	[" ", " ", " ", " ", " ", " "]  // column seven
+	[], // column one
+	[], // column two
+	[], // column three
+	[], // column four
+	[], // column five
+	[], // column six
+	[]  // column seven
 ];
 
 let wins = 0;
@@ -35,8 +38,13 @@ function draw_board() {
 }
 
 // returns true if col is full, or false otherwise
-function isFull(col) {
-
+// NOTE: col is the column index (e.g., column two has a column index of 1)
+function isColFull(col) {
+	if (board[col].length >= ROWS) {
+		return true;
+	} else {
+		return false;
+	}
 }
 
 // processes user move
@@ -52,13 +60,13 @@ function aiTurn() {
 // clears the board
 function reset() {
 	board = [
-		[" ", " ", " ", " ", " ", " "], // column one
-		[" ", " ", " ", " ", " ", " "], // column two
-		[" ", " ", " ", " ", " ", " "], // column three
-		[" ", " ", " ", " ", " ", " "], // column four
-		[" ", " ", " ", " ", " ", " "], // column five
-		[" ", " ", " ", " ", " ", " "], // column six
-		[" ", " ", " ", " ", " ", " "]  // column seven
+		[], // column one
+		[], // column two
+		[], // column three
+		[], // column four
+		[], // column five
+		[], // column six
+		[]  // column seven
 	];
 	draw_board();
 }
