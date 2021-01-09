@@ -18,7 +18,7 @@ let losses = 0;
 let ties = 0;
 
 // updates the DOM based on the board
-function draw_board() {
+function drawBoard() {
 	// for (let i = 0; i < 6; i++) {
 	// 	for (let j = 0; j < 7; j++) {
 	// 		let tile = document.getElementById(`tile-${i}-${j}`);
@@ -79,7 +79,7 @@ function reset() {
 		[], // column six
 		[]  // column seven
 	];
-	draw_board();
+	drawBoard();
 }
 
 // starts the game
