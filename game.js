@@ -70,14 +70,23 @@ function isBoardFull() {
 	return true;
 }
 
-// processes AI move
-function aiMove() {
-	// Use Math.random() to determine AI move.
-}
-
 // checks for win condition
 function hasFourInARow() {
 
+}
+
+function aiMove() {
+	let stopper = 0;
+	// Use Math.random() to determine AI move.
+	while(stopper !== 1){
+	const colo = Math.floor(Math.random()*COLUMNS);
+	const rows = Math.floor(Math.random()*ROWS);
+		if(board[colo][rows] !== "O" && board[colo][rows] !== "X") {
+			board[colo].push("X");
+			drawBoard();
+			stopper = 1;
+		}
+	}
 }
 
 // pushes player's piece to bottom of column
@@ -86,7 +95,7 @@ function choose(r, c) {
 	if (board[c][r] !== "O" && board[c][r] !== "X") {
 		board[c].push("O");
 		drawBoard();
-		// checks for user win and tie
+		// checks for user win and ties
 		if (hasFourInARow()) {
 			wins++;
 			wlt();
