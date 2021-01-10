@@ -75,10 +75,9 @@ function hasFourInARow() {
 
 }
 
-// processes AI move
+// determines AI move using Math.random()
 function aiMove() {
 	let stopper = 0;
-	// Use Math.random() to determine AI move.
 	while (stopper !== 1) {
 		const colo = Math.floor(Math.random() * COLUMNS);
 		const rows = Math.floor(Math.random() * ROWS);
