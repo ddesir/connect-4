@@ -20,7 +20,7 @@ let ties = 0;
 //This will update WLT whenever the user or AI enters a piece
 function wlt(){
 	document.getElementById("wins").innerHTML = "Wins: " + wins;
-	document.getElementById("loss").innerHTML = "Losses : " + losses;
+	document.getElementById("losses").innerHTML = "Losses : " + losses;
 	document.getElementById("ties").innerHTML = "Ties : " + ties;
 }
 
