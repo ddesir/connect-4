@@ -3,7 +3,8 @@
 const ROWS = 6;
 const COLUMNS = 7;
 
-// this board is rotated 90 degrees clockwise to players
+// bottom of board  top of board
+// <<<<<<<<<<<<<<<  >>>>>>>>>>>>
 let board = [
 	[' ', ' ', ' ', ' ', ' ', ' ', ' '], // column one
 	[' ', ' ', ' ', ' ', ' ', ' ', ' '], // column two
