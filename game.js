@@ -56,9 +56,9 @@ function choose(x, y){
 
 //this should be put under win/loss conditions
 function wlt() {
-	document.getElementById("wins").innerHTML = "Wins: " + wins;
-	document.getElementById("losses").innerHTML = "Losses : " + losses;
-	document.getElementById("ties").innerHTML = "Ties : " + ties;
+	document.getElementById("win").innerHTML = "Wins: " + wins;
+	document.getElementById("loss").innerHTML = "Losses : " + losses;
+	document.getElementById("tie").innerHTML = "Ties : " + ties;
 }
 
 // returns true if col is full
