@@ -86,16 +86,18 @@ function choose(r, c) {
 	if (!isColFull(c) && board[c][r] !== "O" && board[c][r] !== "O") {
 		board[c].push("O");
 		drawBoard();
-		// checks for user win
+		// checks for user win and tie
 		if (hasFourInARow()) {
 			wins++;
 			wlt();
 			reset();
-
-			// prevents AI from making move
-			return;
-		};
-		aiMove();
+		} else if (isBoardFull()) {
+			ties++;
+			wlt();
+			reset();
+		} else {
+			aiMove();
+		}
 	}
 }
 
