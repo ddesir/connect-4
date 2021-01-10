@@ -7,3 +7,22 @@
 	text-align: center;
 	color: white;
 }
+
+
+.tile{
+    width: 60px;
+    height: 60px;
+    border: 1px solid darkblue;
+    font-size: 12px;
+    text-align: center;
+}
+
+.tile:not(.clicked):hover{
+    cursor: pointer;
+    background-color: rgba(61, 82, 213, 0.5);
+}
+
+.tile.clicked:hover{
+    cursor: not-allowed;
+    background-color: rgba(240, 100, 73, 0.5);
+}
