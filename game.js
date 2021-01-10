@@ -70,10 +70,6 @@ function isBoardFull() {
 	return true;
 }
 
-// processes AI move
-
-
-
 // checks for win condition
 function hasFourInARow() {
 
@@ -103,7 +99,7 @@ function choose(r, c) {
 		if (hasFourInARow()) {
 			wins++;
 			wlt();
-			reset();b
+			reset();
 		} else if (isBoardFull()) {
 			ties++;
 			wlt();
