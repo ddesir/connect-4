@@ -75,6 +75,7 @@ function hasFourInARow() {
 
 }
 
+// processes AI move
 function aiMove() {
 	let stopper = 0;
 	// Use Math.random() to determine AI move.
