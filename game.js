@@ -83,7 +83,7 @@ function hasFourInARow() {
 // pushes player's piece to bottom of column
 function choose(r, c) {
 	// verifies user click
-	if (board[c][r] !== "O" && board[c][r] !== "O") {
+	if (board[c][r] !== "O" && board[c][r] !== "X") {
 		board[c].push("O");
 		drawBoard();
 		// checks for user win and tie
