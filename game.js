@@ -78,9 +78,11 @@ function hasFourInARow() {
 // determines AI move using Math.random()
 function aiMove() {
 	let stopper = 0;
+	// repeats until AI finds a non-full column
 	while (stopper !== 1) {
 		const colo = Math.floor(Math.random() * COLUMNS);
 		const rows = Math.floor(Math.random() * ROWS);
+		// checks for non-full column
 		if (board[colo][rows] !== "O" && board[colo][rows] !== "X") {
 			board[colo].push("X");
 			drawBoard();
