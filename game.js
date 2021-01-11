@@ -70,7 +70,7 @@ function isBoardFull() {
 	return true;
 }
 
-// checks for win condition
+// returns true if the board has four-in-a-row
 function hasFourInARow() {
 
 }
@@ -78,6 +78,7 @@ function hasFourInARow() {
 // determines AI move using Math.random()
 function aiMove() {
 	let stopper = 0;
+	// repeats until AI finds a non-full column
 	while (stopper !== 1) {
 		const colo = Math.floor(Math.random() * COLUMNS);
 		if (!isColFull(colo)) {

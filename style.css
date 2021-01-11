@@ -9,16 +9,19 @@
 }
 
 .tile {
-	width: 60px;
-	height: 60px;
-	border: 1px solid darkblue;
+	width: 40px;
+	height: 70px;
 	font-size: 12px;
 	text-align: center;
+	border-radius: 50%;
+	background-color: white;
+	border: 5px solid blue;
+
 }
 
 .tile:not(.clicked):hover {
 	cursor: pointer;
-	background-color: rgba(61, 82, 213, 0.5);
+	background-color: rgba(0, 199, 0, 0.74);
 }
 
 .tile.clicked:hover {
