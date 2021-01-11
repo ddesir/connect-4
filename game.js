@@ -91,11 +91,9 @@ function aiMove() {
 	if (hasFourInARow()) {
 		losses++;
 		wlt();
-		reset();
 	} else if (isBoardFull()) {
 		ties++;
 		wlt();
-		reset();
 	}
 }
 
@@ -109,11 +107,9 @@ function choose(r, c) {
 		if (hasFourInARow()) {
 			wins++;
 			wlt();
-			reset();
 		} else if (isBoardFull()) {
 			ties++;
 			wlt();
-			reset();
 		} else {
 			aiMove();
 		}
