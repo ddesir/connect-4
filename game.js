@@ -80,8 +80,7 @@ function aiMove() {
 	let stopper = 0;
 	while (stopper !== 1) {
 		const colo = Math.floor(Math.random() * COLUMNS);
-		const rows = Math.floor(Math.random() * ROWS);
-		if (board[colo][rows] !== "O" && board[colo][rows] !== "X") {
+		if (!isColFull(colo)) {
 			board[colo].push("X");
 			drawBoard();
 			stopper = 1;
