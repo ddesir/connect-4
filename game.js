@@ -45,6 +45,7 @@ function wlt() {
 	document.getElementById("win").innerHTML = "Wins: " + wins;
 	document.getElementById("loss").innerHTML = "Losses : " + losses;
 	document.getElementById("tie").innerHTML = "Ties : " + ties;
+	document.getElementById("reset").innerHTML = "Play Again";
 }
 
 // returns true if col is full
@@ -126,6 +127,13 @@ function aiMove() {
 			stopper = 1;
 		}
 	}
+	if (hasFourInARow()) {
+		losses++;
+		wlt();
+	} else if (isBoardFull()) {
+		ties++;
+		wlt();
+	}
 }
 
 // pushes player's piece to bottom of column
@@ -138,11 +146,9 @@ function choose(r, c) {
 		if (hasFourInARow()) {
 			wins++;
 			wlt();
-			reset();
 		} else if (isBoardFull()) {
 			ties++;
 			wlt();
-			reset();
 		} else {
 			aiMove();
 		}
@@ -161,6 +167,7 @@ function reset() {
 		[]  // column seven
 	];
 	drawBoard();
+	document.getElementById("reset").innerHTML = "Reset Board";
 }
 
 // starts the game
