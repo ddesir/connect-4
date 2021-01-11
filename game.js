@@ -18,7 +18,7 @@ let board = [
 let wins = 0;
 let losses = 0;
 let ties = 0;
-
+let isGameRunning = true;
 // updates the DOM's board based on the board array
 function drawBoard() {
 	// column-by-column
@@ -59,6 +59,86 @@ function isColFull(col) {
 	}
 }
 
+//section to be called to isBoardFull
+//////////////////////////////////////////////////////////////////////////
+function horiCheck(){
+    for (let row = 0; row < board.length; row++){
+        for (let col = 0; col < 4; col++){
+			if((board[col][row] == "X") && (board[col+1][row] == "X") && (board[col+2][row] == "X") && (board[col+3][row] == "X")){
+				return true;
+			}
+		}
+	}
+}
+
+function vertiCheck(){
+    for (let col = 0; col < 7; col++){
+        for (let row = 0; row < 3; row++){
+			if((board[col][row] == "X") && (board[col][row+1] == "X") && (board[col][row+2] == "X") && (board[col][row+3] == "X")){
+				return true;
+			}
+		}
+	}
+}
+function diagCheck1(){
+    for(let col = 0; col < 4; col++){
+        for (let row = 0; row < 3; row++){
+			if((board[col][row] == "X") && (board[col+1][row+1] == "X") && (board[col+2][row+2] == "X") && (board[col+3][row+3] == "X")){
+				return true;
+			}
+		}
+	}
+}
+function diagCheck2(){
+	for(let col = 0; col < 4; col++){
+        for (let row = 5; row > 2; row--){
+			if((board[col][row] == "X") && (board[col-1][row-1] == "X") && (board[col-2][row-2] == "X") && (board[col-3][row-3] == "X")){
+				return true;
+			}
+		}
+	}
+}
+//UserChecks
+function horiCheck1(){
+    for (let row = 0; row < board.length; row++){
+        for (let col = 0; col < 4; col++){
+			if((board[col][row] == "O") && (board[col+1][row] == "O") && (board[col+2][row] == "O") && (board[col+3][row] == "O")){
+				return true;
+			}
+		}
+	}
+}
+
+function vertiCheck1(){
+    for (let col = 0; col < 7; col++){
+        for (let row = 0; row < 3; row++){
+			if((board[col][row] == "O") && (board[col][row+1] == "O") && (board[col][row+2] == "O") && (board[col][row+3] == "O")){
+				return true;
+			}
+		}
+	}
+}
+function diagCheck3(){
+    for(let col = 0; col < 4; col++){
+        for (let row = 0; row < 3; row++){
+			if((board[col][row] == "O") && (board[col+1][row+1] == "O") && (board[col+2][row+2] == "O") && (board[col+3][row+3] == "O")){
+				return true;
+			}
+		}
+	}
+}
+function diagCheck4(){
+	for(let col = 0; col < 4; col++){
+        for (let row = 5; row > 2; row--){
+			if((board[col][row] == "O") && (board[col-1][row-1] == "O") && (board[col-2][row-2] == "O") && (board[col-3][row-3] == "X")){
+				return true;
+			}
+		}
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+
 // returns false if the board has at least one non-full column
 function isBoardFull() {
 	// scans the board column by column
@@ -73,8 +153,14 @@ function isBoardFull() {
 
 // returns true if the board has four-in-a-row
 function hasFourInARow() {
-	// placeholder to prevent errors
-	return false;
+	if(horiCheck1() || vertiCheck1() || diagCheck3() || diagCheck4()){
+		return true;
+	}
+}
+function hasFourInARowAI(){
+	if(horiCheck() || vertiCheck() || diagCheck1() || diagCheck2()){
+		return true;
+	}
 }
 
 // determines AI move using Math.random()
@@ -89,11 +175,13 @@ function aiMove() {
 			stopper = 1;
 		}
 	}
-	if (hasFourInARow()) {
+	if (hasFourInARowAI()) {
 		losses++;
+		isGameRunning = false;
 		wlt();
 	} else if (isBoardFull()) {
 		ties++;
+		isGameRunning = false;
 		wlt();
 	}
 }
@@ -101,19 +189,21 @@ function aiMove() {
 // pushes player's piece to bottom of column
 function choose(r, c) {
 	// verifies user click
-	if (board[c][r] !== "O" && board[c][r] !== "X") {
+	if (board[c][r] !== "O" && board[c][r] !== "X" && isGameRunning) {
 		board[c].push("O");
 		drawBoard();
 		// checks for user win and ties
 		if (hasFourInARow()) {
 			wins++;
+			isGameRunning = false;
 			wlt();
 		} else if (isBoardFull()) {
 			ties++;
+			isGameRunning = false;
 			wlt();
-		} else {
-			aiMove();
-		}
+		} 
+		aiMove();
+
 	}
 }
 
@@ -129,6 +219,7 @@ function reset() {
 		[]  // column seven
 	];
 	drawBoard();
+	isGameRunning = true;
 	document.getElementById("reset").innerHTML = "Reset Board";
 }
 
