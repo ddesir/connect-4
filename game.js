@@ -72,7 +72,8 @@ function isBoardFull() {
 
 // returns true if the board has four-in-a-row
 function hasFourInARow() {
-
+	//placeholder to prevent errors
+	return false;
 }
 
 // determines AI move using Math.random()
@@ -86,6 +87,15 @@ function aiMove() {
 			drawBoard();
 			stopper = 1;
 		}
+	}
+	if(hasFourInARow()){
+		losses++;
+		wlt();
+		reset();
+	} else if(isBoardFull()){
+		ties++;
+		wlt();
+		reset();
 	}
 }
 
