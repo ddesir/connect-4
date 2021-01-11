@@ -72,7 +72,46 @@ function isBoardFull() {
 
 // returns true if the board has four-in-a-row
 function hasFourInARow() {
+	let x = ROWS, y = COLUMNS;
 
+	// Checks columns
+	for (let i = 0; i < COLUMNS; i++) {
+		if (board[x][i]) {
+			return false;
+		}
+
+	}
+
+	// Checks rows
+	for (let i = 0; i < ROWS; i++) {
+		if (board[i][y]) {
+			return false;
+		}
+	}
+
+	// Checks diagonal up
+	while (x >= 0 && y >= 0) {
+		if (board[x][y]) {
+			return false;
+		}
+
+		x--;
+		y--;
+	}
+
+	x = ROWS, y = COLUMNS;	// Resets x and y
+
+	// Checks diagonal down
+	while (y > 0 && x < ROWS) {
+		if (board[x][y]) {
+			return false;
+		}
+
+		x++;
+		y--;
+	}
+}
+	return true;
 }
 
 // determines AI move using Math.random()
