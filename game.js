@@ -45,6 +45,7 @@ function wlt() {
 	document.getElementById("win").innerHTML = "Wins: " + wins;
 	document.getElementById("loss").innerHTML = "Losses : " + losses;
 	document.getElementById("tie").innerHTML = "Ties : " + ties;
+	document.getElementById("reset").innerHTML = "Play Again";
 }
 
 // returns true if col is full
@@ -128,6 +129,7 @@ function reset() {
 		[]  // column seven
 	];
 	drawBoard();
+	document.getElementById("reset").innerHTML = "Reset Board";
 }
 
 // starts the game
