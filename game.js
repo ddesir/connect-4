@@ -197,7 +197,6 @@ function choose(r, c) {
 			wins++;
 			isGameRunning = false;
 			wlt();
-			return;
 		} else if (isBoardFull()) {
 			ties++;
 			isGameRunning = false;
