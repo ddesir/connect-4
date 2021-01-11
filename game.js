@@ -72,7 +72,7 @@ function isBoardFull() {
 
 // returns true if the board has four-in-a-row
 function hasFourInARow() {
-	//placeholder to prevent errors
+	// placeholder to prevent errors
 	return false;
 }
 
@@ -88,10 +88,10 @@ function aiMove() {
 			stopper = 1;
 		}
 	}
-	if(hasFourInARow()){
+	if (hasFourInARow()) {
 		losses++;
 		wlt();
-	} else if(isBoardFull()){
+	} else if (isBoardFull()) {
 		ties++;
 		wlt();
 	}
