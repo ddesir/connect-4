@@ -70,7 +70,7 @@ function isBoardFull() {
 	return true;
 }
 
-// checks for win condition
+// returns true if the board has four-in-a-row
 function hasFourInARow() {
 
 }
